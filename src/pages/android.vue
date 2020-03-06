@@ -203,7 +203,6 @@ export default {
         }
       );
     }, 0);
-
   },
   filters: {
     // 定义过滤器
@@ -507,18 +506,19 @@ export default {
 .content_tcxq {
   display: flex;
   margin: 40px 32px 0;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 .content_tcxq > div {
   width: 30%;
   height: 259px;
+  margin-right:4%;
   background: rgba(255, 255, 255, 0.1);
   border: 1Px solid rgba(223, 185, 128, 0.5);
   border-radius: 12px;
   margin-bottom: 37px;
   position: relative;
 }
+.content_tcxq > div:nth-of-type(3n){margin-right:0}
 .content_tcxq > div > span {
   display: inline-block;
   position: absolute;

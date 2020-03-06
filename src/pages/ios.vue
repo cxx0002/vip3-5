@@ -513,19 +513,19 @@ let that = this;
 .content_tcxq {
   display: flex;
   margin: 40px 32px 0;
-  justify-content: left;
   flex-wrap: wrap;
 }
 .content_tcxq > div {
-  width: 195px;
+  width: 30%;
   height: 259px;
+  margin-right:4%;
   background: rgba(255, 255, 255, 0.1);
-  border:2px solid rgba(223,185,128,0.5);
+  border: 1Px solid rgba(223, 185, 128, 0.5);
   border-radius: 12px;
   margin-bottom: 37px;
-  margin-right: 50px;
   position: relative;
 }
+.content_tcxq > div:nth-of-type(3n){margin-right:0}
 .content_tcxq > div > span {
   display: inline-block;
   position: absolute;
