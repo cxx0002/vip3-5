@@ -25,7 +25,7 @@
       </div>
       <p class="hyfl">会员福利</p>
       <div class="hytq">
-        <div v-for="(item,key) in hyflList" class="hytqxq">
+        <div v-for="(item,key) in hyflList" :key="key" class="hytqxq">
           <img :src="item.img" alt />
           <span>{{item.name}}</span>
         </div>
@@ -99,7 +99,7 @@ import wxImg from "@/assets/andorid/icon_wechat.png";
 import zfbImg from "@/assets/andorid/icon_alipay.png";
 import txImg from "@/assets/andorid/icon_head_def.png";
 import { Dialog, Button } from "mand-mobile";
-
+import {host} from '../const'
 export default {
   name: "Android",
   components: {
@@ -107,7 +107,7 @@ export default {
   },
   data() {
     return {
-      host: "http://user.smaoxs.com",
+      host: host,
       hyFlag: false,
       txImg: txImg,
       boyImg: boyImg,
